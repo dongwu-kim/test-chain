@@ -1,0 +1,7 @@
+syntax = "proto3";
+package dongwu.dongwu;
+
+option go_package = "dongwu/x/dongwu/types";
+
+// Msg defines the Msg service.
+service Msg {}

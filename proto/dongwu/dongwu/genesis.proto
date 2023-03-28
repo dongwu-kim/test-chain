@@ -1,0 +1,12 @@
+syntax = "proto3";
+package dongwu.dongwu;
+
+import "gogoproto/gogo.proto";
+import "dongwu/dongwu/params.proto";
+
+option go_package = "dongwu/x/dongwu/types";
+
+// GenesisState defines the dongwu module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
